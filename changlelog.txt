@@ -1,0 +1,2 @@
+1.1 Replaced images using jQuery and DOM instead of RegEx
+1.2 Used .png potato instead
