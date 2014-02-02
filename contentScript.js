@@ -1,3 +1,3 @@
 $(document).ready(function() {
-	$('img[src]').attr('src', "http://howbigismypotato.com/potato.jpg");
+	$('img[src]').attr('src', chrome.extension.getURL("res/potato.png"));
 });
