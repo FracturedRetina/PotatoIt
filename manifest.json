@@ -1,24 +1,26 @@
 {
 	"manifest_version": 2,
-
+	
 	"name": "Potato It!",
-	"description": "Image from HowBigIsMyPotato.com. Used with permission.",
-	"version": "1.2",
-
+	"description": "Image from HowBigIsMyPotato.com. Used with permission",
+	"version": "1.3",
+	
 	"browser_action": {
 		"default_name": "Potato It!",
 		"default_icon": "res/icon-pxl-light.png"
 	},
-
+	
+	"options_page": "options.html",
+	
 	"web_accessible_resources": [
-		"res/potato.png"
+		"res/potato.png", "jquery.min.js", "options.js"
 	],
-
+	
 	"content_scripts": [{
 		"matches":["<all_urls>"],
 		"js":["jquery.min.js", "contentScript.js"]
 	}],
-
+	
 	"permissions": [
 		"tabs", "storage"
 	]
