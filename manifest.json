@@ -2,7 +2,7 @@
 	"manifest_version": 2,
 
 	"name": "Potato It!",
-	"description": "Image from HowBigIsMyPotato.com",
+	"description": "Image from HowBigIsMyPotato.com. Used with permission.",
 	"version": "1.2",
 
 	"browser_action": {
