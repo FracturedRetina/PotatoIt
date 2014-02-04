@@ -1,4 +1,5 @@
 1.1.0 Replaced images using jQuery and DOM instead of RegEx
 1.1.1 Updated icon
-1.2 Used .png potato instead
-1.3 Added options page
+1.2.0 Used .png potato instead
+1.3.0 Added options page
+1.3.1 Bug fixes
