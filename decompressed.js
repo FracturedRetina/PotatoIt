@@ -4,9 +4,9 @@ $(document).ready(function() {
 		if (items["level"] == 0) {
 			return;
 		} else if (items["level"] == 1) {
-			$('img[src]').attr('src', chrome.extension.getURL("res/potato.png"));
+			$('img[src]').attr('src',"http://www.howbigismypotato.com/potato.jpg"));
 		} else if (items["level"] == 2) {
-			$('img[src]').attr('src', chrome.extension.getURL("res/potato.png"));
+			$('img[src]').attr('src', "http://www.howbigismypotato.com/potato.jpg"));_____
 			$('div').each(function(index) {
 				if ($(this).css('background-image') != 'auto') {
 					$(this).css('background-image', "url(" + chrome.extension.getURL("res/potato.png") + ")");
