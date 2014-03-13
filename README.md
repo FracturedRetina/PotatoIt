@@ -16,7 +16,7 @@ Developer Installation
 2. Extract the .zip file to a folder
 3. Open chrome and go to `chrome://extensions`
 4. Check "Developer Mode"
-5. Click "Load unpacked extension
+5. Click "Load unpacked extension"
 6. Select the folder that you extracted the .zip file to
 
 
