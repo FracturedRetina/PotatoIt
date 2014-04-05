@@ -12,7 +12,8 @@ Settings
 
 Developer Installation
 ----------------------
-1. Click "Download as Zip"
+1. Go to the [repository home](https://github.com/FracturedRetina/PotatoIt)
+2. Click "Download Zip"
 2. Extract the .zip file to a folder
 3. Open chrome and go to `chrome://extensions`
 4. Check "Developer Mode"
@@ -23,7 +24,8 @@ Developer Installation
 Planned Features
 ----------------
  - Using varied potato images
- - Custom potatoes for certain images)
+ - Custom potatoes for certain images
+ - Background script (potatoes for dynamicly loading pages)
  - Replacing videos
  - Replacing icons
  - Replacing Flash documents
