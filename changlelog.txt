@@ -7,4 +7,6 @@
 1.3.3 Updated Description
 2.0.0 Replaces background images as well
       Updated options page
-2.0.1 Added icon
+2.0.1 Added large icon
+2.0.2 Improved options page
+      Fixed bug for new users

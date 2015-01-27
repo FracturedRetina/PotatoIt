@@ -3,7 +3,7 @@
 	
 	"name": "Potato It!",
 	"description": "Internet + Potatoes = Pure Awesome",
-	"version": "2.0.1",
+	"version": "2.0.2",
 	
 	"icons": {
 		"19": "res/icon-pxl-light.png",

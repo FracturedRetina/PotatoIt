@@ -1,32 +1,31 @@
 $(document).ready(function() {
-	// chrome.storage.sync.get("enabled", function(items) {
-	// 	if (items["enabled"] == false) {
-	// 		$('#enabled').attr("checked", false);
-	// 	} else {
-	// 		$('#enabled').attr("checked", true);
-	// 	}
-	// });
-	
 	//Set up document
 	chrome.storage.sync.get("level", function(items) {
 		$('#level').val(items["level"]);
 	});
 	
 	
-	//Set button listener
+	//Set settings on button click
 	$('#save').click(function() {
 		var setting = {};
 		setting["level"] = $('#level').val();
+//		setting["icon"] = $('#iconForm').serialize().match(/\=(.*)/g).substr(1);
 		
 		chrome.storage.sync.set(setting,
 			function() {
-				console.log("\"level\": " + setting);
+				console.log("\"level\": " + setting["level"]);
+//				console.log("\"icon\": " + setting["icon"]);
 			}
 		);
 
 		//Check if settings were properly saved
 		chrome.storage.sync.get("level", function(items) {
-			if (setting["level"] === items["level"]) {
+			var saved =
+			setting["level"] === items["level"]
+//			&& setting["icon"] === items["icon"]
+			;
+			
+			if (saved) {
 				alert("Settings saved successfully.");
 			} else {
 				alert("Problem saving settings.");

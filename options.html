@@ -1,38 +1,52 @@
 <html lang="en">
 	<head>
 		<title>Options - Potato It!</title>
+		
+		<meta id="author" content="Evan Shimoniak" />
+		
+		<!--**CSS**-->
+		<!--Local Stylesheet-->
+		<link rel="stylesheet" type="text/css" href="options.css" />
+		
+		<!--**JavaScript**-->
+		<!--jQuery-->
 		<script type="text/javascript" src="jquery.min.js"></script>
+		<!--Local Script-->
 		<script type="text/javascript" src="options.js"></script>
-		<style type="text/css">
-			#level {
-				-webkit-appearance: slider-vertical;
-				width: 20px;
-				height: 118.5px;
-			}
-			#labels {
-				position: absolute;
-				left: 40px;
-				top: -10px;
-			}
-		</style>
 	</head>
 	<body>
-		<div id="settings">
-			<div id="levelDiv">
-				<input id="level" type="range" min="0" max="3" step="1" value="1" />
-				<div id="labels">
-					<p>OVER 9,000!!</p>
-					<p>Extreme</p>
-					<p>Modest</p>
-					<p>None</p>
+		<div id="content">
+			<div id="settings">
+				<div id="levelDiv">
+					<!--Slider-->
+					<input id="level" type="range" min="0" max="3" step="1" value="1" list="steplist" />
+					<datalist id="steplist">
+						<option>0</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+					</datalist>
+					<!--Slider Labels-->
+					<div id="labels">
+						<!--p>DOUBLE-RAINBOW-ACROSS-THE-SKY-FUKISHIMA-GUMDROPS-TRIPLE-9000</p-->
+						<p>OVER 9,000!!</p>
+						<p>Extreme</p>
+						<p>Modest</p>
+						<p>None</p>
+					</div>
+					<!---->
+					<!--form id="iconForm">
+						<input type="radio" name="icon" value="old">Classic Icon<br>
+						<input type="radio" name="icon" value="new">Photo-Realistic Icon
+					</form-->
+				</div>
+
+				<div id="exclude">
+					
 				</div>
 			</div>
-
-			<div id="exclude">
-				
-			</div>
+			<br />
+			<button id="save">Save</button>
 		</div>
-		<br />
-		<button id="save">Save</button>
 	</body>
 </html>
