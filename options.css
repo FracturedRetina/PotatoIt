@@ -1,0 +1,40 @@
+#level {
+	-webkit-appearance: slider-vertical;
+	width: 20px;
+	height: 115px;
+	margin: 10px;
+
+	transform: scale(-1, 1);
+}
+
+::-moz-range-track, ::-ms-track {
+	-webkit-appearance: none;
+	width: 20px;
+	height: 115px;	
+}
+
+#labels {
+	position: absolute;
+	top: 0px;
+	left: 50px;
+}
+#content {
+	font-family: "Trebuchet MS", sans-serif;
+	font-size: 16px;
+	
+	margin: auto;
+	padding: 10px;
+	position: absolute;
+	
+	width: 144px;
+	height: 175px;
+	
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+}
+#save {
+	margin: auto;
+	display: block;
+}
